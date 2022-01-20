@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  animation: an-modal 0.4s 1 normal forwards;
+  z-index: 3;
+}
+
+.modal-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  animation: an-modal 0.4s 1 normal forwards;
+  border-radius: 7px;
+  z-index: 2;
+}
+
+.modal-content h3 {
+  color: #1e3a8a;
+  margin: 1.2rem 0;
+}
+
+.modal-content button {
+  width: 10rem;
+  height: 3rem;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+@keyframes an-modal {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 60px;
+  }
+
+  100% {
+    margin-top: 65px;
+  }
+}
+
+.yes {
+  color: #fff;
+  background-color: green;
+}
+
+.no {
+  color: #fff;
+  background-color: red;
+}
+
+.backdrop-Save-Games {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.modal-Save-Games {
+  position: absolute;
+  top: 5%;
+  left: 40%;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  animation: an-modal 0.4s 1 normal forwards;
+  z-index: 3;
+}
+
+.modal-Save-Games .modal-content {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  z-index: 4;
+  overflow: auto;
+}
+
+.modal-Save-Games .modal-content .title {
+  margin: 3rem 0;
+}
+
+.modal-Save-Games .modal-content .saved-Game {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  border: 2px solid #7c3aed;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-Save-Games .modal-content .saved-Game .title-save {
+  color: #b3c5dd;
+}
+
+.modal-Save-Games .modal-content .saved-Game .user-Score {
+  color: #064e3b;
+}
+
+.modal-Save-Games .modal-content .saved-Game .Computer-Score {
+  color: #881337;
+}
+
+.btn-save {
+  width: 100%;
+  height: auto;
+}
+
+.btn-save button {
+  width: 7rem;
+  height: 40px;
+  background-color: #1e3a8a;
+  color: #fff;
+  margin: 3rem 3rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.dashboard {
+  width: 16rem;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7rem 0;
+}
+
+.dashboard nav {
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  background-color: #0f172a;
+  border-radius: 7px;
+  padding: 4rem 0;
+}
+
+.dashboard nav .items-Dashboard {
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: #0f172a;
+  border-radius: 7px;
+  padding: 4rem 0;
+}
+
+.dashboard nav .items-Dashboard .icon-create-New-Game,
+.dark-Teams-or-Light-Teams {
+  color: #fff;
+  cursor: pointer;
+}
+
+.dashboard nav .items-Dashboard .icon-Saved-Games {
+  margin: 0.9rem 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.play-Ground {
+  width: 80%;
+  height: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -35rem 15rem;
+}
+
+.play-Ground main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+  border-radius: 7px;
+}
+
+.play-Ground main .game {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.play-Ground main .game .user-Selection {
+  margin: 2rem 0;
+}
+
+.play-Ground main .game .title {
+  margin: 1.2rem 0;
+}
+
+.play-Ground main .game .title h2 {
+  color: #fff;
+}
+
+.play-Ground main .scores {
+  display: flex;
+  flex-direction: column;
+}
+
+.play-Ground main .scores .computer-Score {
+  margin: 3rem 0;
+}
+
+.play-Ground main .scores .computer-Score h3 {
+  color: #fff;
+}
+
+.play-Ground main .scores .user-Score h3 {
+  color: #fff;
+}
+
+img {
+  cursor: pointer;
+}
+
+.massage {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 320px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #86efac;
+  border-radius: 7px;
+}
+
+.hidden {
+  display: none;
+}
