@@ -372,11 +372,11 @@ img {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .dashboard {
-    width: 10rem;
+    width: 100%;
   }
 
   .dashboard nav {
-    width: 7rem;
+    width: 80%;
   }
 
   .dashboard nav .items-Dashboard {
@@ -384,7 +384,7 @@ img {
   }
 
   .btn-save button {
-    width: 3rem;
+    width: 12rem;
   }
 
   .play-Ground {
@@ -393,8 +393,25 @@ img {
     flex-direction: column;
   }
 
+  .play-Ground main {
+    flex-direction: column;
+  }
+
   .play-Ground main .game {
     width: 50%;
+    flex-direction: column;
+  }
+
+  .modal {
+    left: 20%;
+  }
+
+  .modal-Save-Games {
+    left: 10%;
+  }
+
+  .massage {
+    left: 10%;
   }
 
   img {
