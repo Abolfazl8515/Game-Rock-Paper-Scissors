@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paper rock scissors game</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <div id="backdrop-Finish-Game" class="backdrop hidden"></div>
+    <div id="modal-Finish-Game" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="winner"></h3>
+            <button id="start-Game">Start Game</button>
+        </div>
+    </div>
+    <div id="backdrop-Ask-Save" class="backdrop hidden"></div>
+    <div id="modal-Ask-Save" class="modal hidden">
+        <div class="modal-content">
+            <h3>Do you want to save this game?</h3>
+            <button id="Yes" class="yes">Yes</button>
+            <button id="No" class="no">No</button>
+        </div>
+    </div>
+    <div id="backdrop-Save-Games" class="backdrop-Save-Games hidden"></div>
+    <div id="modal-Save-Games" class="modal-Save-Games hidden">
+        <div class="modal-content">
+            <h2 class="title">your saved games:</h2>
+        </div>
+    </div>
+    <div class="dashboard">
+        <nav>
+            <div class="btn-save">
+                <button type="button" id="btn-save">Save</button>
+            </div>
+            <div class="items-Dashboard">
+                <div class="icon-create-New-Game">
+                    <i class="bi bi-plus-square"></i>
+                    <span>Create a new Game</span>
+                </div>
+                <div class="icon-Saved-Games">
+                    <i class="bi bi-bookmark-plus"></i>
+                    <span>Saved games</span>
+                </div>
+                <div class="dark-Teams-or-Light-Teams">
+                    <i class="bi bi-brightness-high"></i>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="play-Ground">
+        <main>
+            <div class="game">
+                <div class="user-Selection">
+                    <div class="title">
+                        <h2>User selection:</h2>
+                    </div>
+                    <div class="user-Choices">
+                        <img src="images/paper.png" class="user-Images" id="0" alt="paper">
+                        <img src="images/rock.png" class="user-Images" id="1" alt="rock">
+                        <img src="images/scissors.png" class="user-Images" id="2" alt="scissors">
+                    </div>
+                </div>
+                <div class="computer-Selection">
+                    <div class="title">
+                        <h2>Computer selection:</h2>
+                    </div>
+                    <div class="computer-Choices">
+                        <img src="images/paper.png" class="hidden computer-Images" id="3" alt="plaper">
+                        <img src="images/rock.png" class="hidden computer-Images" id="4" alt="rock">
+                        <img src="images/scissors.png" class="hidden computer-Images" id="5" alt="scissors">
+                    </div>
+                </div>
+            </div>
+            <div class="scores">
+                <div class="computer-Score">
+                    <h3>Compuer Score: <span id="computer-Score">0</span></h3>
+                </div>
+                <div class="user-Score">
+                    <h3>User Score: <span id="user-Score">0</span></h3>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="massage hidden">
+        <h2>your game is saved</h2>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
