@@ -274,6 +274,135 @@ img {
   border-radius: 7px;
 }
 
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .dashboard {
+    width: 10rem;
+  }
+
+  .dashboard nav {
+    width: 7rem;
+  }
+
+  .dashboard nav .items-Dashboard {
+    width: 5rem;
+  }
+
+  .btn-save button {
+    width: 3rem;
+  }
+
+  .play-Ground {
+    width: 70%;
+    margin: -35rem 10rem;
+  }
+
+  .play-Ground main .game {
+    width: 50%;
+  }
+
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dashboard {
+    width: 10rem;
+  }
+
+  .dashboard nav {
+    width: 7rem;
+  }
+
+  .dashboard nav .items-Dashboard {
+    width: 5rem;
+  }
+
+  .btn-save button {
+    width: 3rem;
+  }
+
+  .play-Ground {
+    width: 70%;
+    margin: -35rem 10rem;
+  }
+
+  .play-Ground main .game {
+    width: 50%;
+  }
+
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .dashboard {
+    width: 10rem;
+  }
+
+  .dashboard nav {
+    width: 7rem;
+  }
+
+  .dashboard nav .items-Dashboard {
+    width: 5rem;
+  }
+
+  .btn-save button {
+    width: 3rem;
+  }
+
+  .play-Ground {
+    width: 70%;
+    margin: -35rem 10rem;
+  }
+
+  .play-Ground main .game {
+    width: 50%;
+  }
+
+  img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .dashboard {
+    width: 10rem;
+  }
+
+  .dashboard nav {
+    width: 7rem;
+  }
+
+  .dashboard nav .items-Dashboard {
+    width: 5rem;
+  }
+
+  .btn-save button {
+    width: 3rem;
+  }
+
+  .play-Ground {
+    width: 70%;
+    margin: 0 5rem;
+    flex-direction: column;
+  }
+
+  .play-Ground main .game {
+    width: 50%;
+  }
+
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
 .hidden {
   display: none;
 }
